@@ -1,0 +1,151 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('demon.webp') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: rgba(0, 0, 0, 0.7);
+    border-bottom: 3px solid #4B0082;
+}
+
+header h2 {
+    color: #FF69B4;
+    font-size: 24px;
+    margin: 0;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s;
+}
+
+.navigation a:hover {
+    color: #FF69B4;
+}
+
+/* Container Styles */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.container1 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #FF69B4;
+}
+
+/* Form Styles */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #4B0082;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+}
+
+form input:focus {
+    border-color: #FF69B4;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background: #4B0082;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button{
+    background: #4B0082;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 30%;
+    padding: 10px;
+}
+button:hover{
+    background: #FF69B4;
+}
+
+form button:hover {
+    background: #FF69B4;
+}
+
+/* Links */
+a {
+    color: #FF69B4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Notification Pop-Up */
+.alert {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #FF69B4;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.alert.show {
+    display: block;
+}
